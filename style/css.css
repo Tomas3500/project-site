@@ -37,15 +37,23 @@ h3 {
   border-radius: 50%;
 }
 
+.sticky-images {
+  position: sticky;
+  top: 0;
+}
+
 .btn {
   width: 100%;
+  border: 1px solid transparent;
 }
 
 .btn-cv {
   font-weight: 700;
   width: 100%;
-  border: 1px transparent;
   border-radius: 5px;
+  border: 1px solid #000000;
+  display: block;
+  color: #000000;
 }
 
 .list-info {
@@ -63,13 +71,32 @@ li a {
   text-decoration: none;
 }
 
-.telegram:hover {
+.color-telegram:hover {
   color: #0000ff91;
 }
 
+.color-gmail:hover {
+  color: #D7463A;
+}
+
 .btn-cv:hover {
-  background: #ffa500;
-  border: none;
+  text-decoration: none;
+  color: #f3f3f3;
+  background-color: #ffa500;
+  transition: 1s ease all;
+}
+
+.my-progress-bar {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.my-progress-bar p {
+  margin-bottom: 0;
+}
+.my-progress-bar span {
+  color: #ffa500;
+  margin-right: 5px;
+  display: inline-block;
 }
 
 a:hover {
@@ -123,16 +150,47 @@ a:hover {
 }
 
 .myBar {
-  width: 20%;
   min-height: 10px;
   background-color: #ffa500;
   font-size: 10px;
   font-weight: 700;
 }
 
+.javaScript {
+  width: 47%;
+}
+
+.html {
+  width: 50%;
+}
+
+.css {
+  width: 55%;
+}
+
+.bootstrap {
+  width: 45%;
+}
+
+.gulp {
+  width: 35%;
+}
+
 /* Section education*/
 .education {
   padding-top: 25px;
+}
+
+.photoshop {
+  width: 43%;
+}
+
+.figma {
+  width: 35%;
+}
+
+.git {
+  width: 45%;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -232,6 +290,10 @@ a:hover {
   /* Place the timelime to the left */
   .timeline::after {
     left: 31px;
+  }
+
+  .right {
+    left: 0;
   }
 
   /* Full-width containers */
