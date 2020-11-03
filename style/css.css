@@ -37,6 +37,11 @@ h3 {
   border-radius: 50%;
 }
 
+@media screen and (max-width: 768px) {
+  .sticky-images {
+    position: static;
+  }
+}
 .sticky-images {
   position: sticky;
   top: 0;
@@ -47,6 +52,19 @@ h3 {
   border: 1px solid transparent;
 }
 
+@media screen and (max-width: 768px) {
+  .block-right__info h1 {
+    font-size: 2rem;
+  }
+  .block-right__info h3 {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 991px) {
+  .sticky-images {
+    position: static;
+  }
+}
 .btn-cv {
   font-weight: 700;
   width: 100%;
@@ -59,10 +77,6 @@ h3 {
 .list-info {
   padding: 0;
   list-style: none;
-}
-
-.block-right__info {
-  margin-left: 15px;
 }
 
 li a {

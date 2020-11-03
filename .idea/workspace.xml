@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1231e7e1-585c-4f96-8949-eb7ed9f1e913" name="Default Changelist" comment="sect/education">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/css.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/css.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/css.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style/css.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/css.scss" beforeDir="false" afterPath="$PROJECT_DIR$/style/css.scss" afterDir="false" />
@@ -19,14 +18,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5364583">
+    <splitter split-orientation="horizontal" split-proportion="0.5171131">
       <split-first>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="620">
-                  <caret line="89" column="46" selection-start-line="89" selection-start-column="46" selection-end-line="89" selection-end-column="46" />
+                <state relative-caret-position="141">
+                  <caret line="18" column="25" lean-forward="true" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
                 </state>
               </provider>
             </entry>
@@ -34,12 +33,12 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/style/css.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="84">
-                  <caret line="192" column="11" selection-start-line="192" selection-start-column="11" selection-end-line="192" selection-end-column="11" />
+                <state relative-caret-position="354">
+                  <caret line="75" column="33" selection-start-line="75" selection-start-column="33" selection-end-line="75" selection-end-column="33" />
                 </state>
               </provider>
             </entry>
@@ -51,6 +50,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>pro</find>
+      <find>block</find>
+      <find>block-</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -63,15 +64,15 @@
         <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/main.js" />
         <option value="$PROJECT_DIR$/style/css.css" />
+        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/style/css.scss" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="7" />
-    <option name="y" value="1" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-131" />
+    <option name="y" value="23" />
     <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
@@ -185,6 +186,7 @@
       <workItem from="1604147074606" duration="3904000" />
       <workItem from="1604162042038" duration="4565000" />
       <workItem from="1604237328464" duration="9864000" />
+      <workItem from="1604427777911" duration="7738000" />
     </task>
     <task id="LOCAL-00001" summary="add style">
       <created>1598274018097</created>
@@ -260,13 +262,14 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85102000" />
+    <option name="totallyTimeSpent" value="92840000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="7" y="1" width="1382" height="744" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.54159594" visible="true" weight="0.22619048" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.54159594" weight="0.09002976" />
       <window_info id="Structure" order="2" sideWeight="0.4006791" side_tool="true" weight="0.1904762" />
       <window_info id="Gulp" order="3" sideWeight="0.5019455" side_tool="true" weight="0.1688988" />
       <window_info id="npm" order="4" sideWeight="0.45840406" side_tool="true" weight="0.11681548" />
@@ -279,7 +282,7 @@
       <window_info anchor="bottom" id="Debug" order="6" weight="0.53989816" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.42444822" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.13752122" />
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.3293718" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -381,24 +384,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="89" column="46" selection-start-line="89" selection-start-column="46" selection-end-line="89" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="5" lean-forward="true" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+        <state relative-caret-position="68">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/style/css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="192" column="11" selection-start-line="192" selection-start-column="11" selection-end-line="192" selection-end-column="11" />
+        <state relative-caret-position="354">
+          <caret line="75" column="33" selection-start-line="75" selection-start-column="33" selection-end-line="75" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="18" column="25" lean-forward="true" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
         </state>
       </provider>
     </entry>
