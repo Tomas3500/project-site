@@ -19,6 +19,7 @@ h3 {
   margin-top: 30px;
   box-shadow: 0 0 8px;
   padding-top: 10px;
+  overflow: hidden;
 }
 
 .color-bg {
@@ -73,13 +74,30 @@ h3 {
     }
   }
 }
-@media screen and (max-width: 991px) {
+
+@media screen and (max-width: 768px) {
   .sticky-images {
     position: static;
   }
+
 }
-
-
+@media screen and (max-width: 991px){
+  .container {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 991px) {
+  .my-progress-bar {
+    font-size: 12px;
+  }
+}
+@media (max-width: 575.98px) {
+  .block-photo img{
+    display: block;
+    max-width: 50%;
+    margin: 20px auto;
+  }
+}
 .btn-cv {
   //font-family: 'Raleway', sans-serif;
   font-weight: 700;
