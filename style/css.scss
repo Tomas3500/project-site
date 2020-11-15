@@ -2,12 +2,12 @@
 
 * {
   font-family: 'Raleway', sans-serif;
-  //font-weight: 400;
   font-size: 20px;
 
 }
 
 h3 {
+  //color: #ffa500;
   color: #ffa500;
   font-weight: 700;
 }
@@ -19,7 +19,11 @@ h3 {
   margin-top: 30px;
   box-shadow: 0 0 8px;
   padding-top: 10px;
-  overflow: hidden;
+}
+
+.sticky-images {
+  position: sticky;
+  top: 10px;
 }
 
 .color-bg {
@@ -37,28 +41,21 @@ h3 {
 }
 
 .my-photo {
-  max-width: 200px;
+  max-width: 100%;
   min-height: 200px;
   display: block;
   border-radius: 50%;
 
 }
 
-@media screen and (max-width: 768px) {
-  .sticky-images {
-    position: static;
-  }
-}
-
-.sticky-images {
-  position: sticky;
-  top: 0;
-}
-
 .btn {
   width: 100%;
   border: 1px solid transparent;
 
+}
+
+.block-right {
+  overflow: hidden;
 }
 
 @media screen and (max-width: 768px) {
@@ -75,29 +72,30 @@ h3 {
   }
 }
 
-@media screen and (max-width: 768px) {
-  .sticky-images {
-    position: static;
-  }
 
-}
-@media screen and (max-width: 991px){
+@media screen and (max-width: 991.98px) {
   .container {
     margin-top: 0;
   }
 }
-@media screen and (max-width: 991px) {
+
+@media screen and (max-width: 991.98px) {
   .my-progress-bar {
     font-size: 12px;
   }
 }
-@media (max-width: 575.98px) {
-  .block-photo img{
+
+@media (max-width: 767.98px) {
+  .block-photo img {
     display: block;
     max-width: 50%;
-    margin: 20px auto;
+    margin: 10px auto;
+  }
+  .sticky-images {
+    position: static;
   }
 }
+
 .btn-cv {
   //font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -259,6 +257,7 @@ a:hover {
   width: 45%;
 }
 
+
 /* The actual timeline (the vertical ruler) */
 .timeline {
   position: relative;
@@ -385,5 +384,20 @@ a:hover {
     /* Make all right containers behave like the left ones */
   .right {
     left: 0%;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding: 10px 10px;
+
+    h2 {
+      font-size: 18px;
+    }
+
+    p {
+      font-size: 15px;
+
+    }
   }
 }
