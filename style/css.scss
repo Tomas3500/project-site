@@ -7,7 +7,6 @@
 }
 
 h3 {
-  //color: #ffa500;
   color: #ffa500;
   font-weight: 700;
 }
@@ -31,20 +30,16 @@ h3 {
 }
 
 .bg-fon {
-  // background: url(/img/bg-font.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.block-photo {
-  display: flex;
-}
+
 
 .my-photo {
   max-width: 100%;
-  min-height: 200px;
-  display: block;
   border-radius: 50%;
+  height: auto;
 
 }
 
@@ -86,7 +81,7 @@ h3 {
 }
 
 @media (max-width: 767.98px) {
-  .block-photo img {
+  .block-photo  {
     display: block;
     max-width: 50%;
     margin: 10px auto;
@@ -97,7 +92,6 @@ h3 {
 }
 
 .btn-cv {
-  //font-family: 'Raleway', sans-serif;
   font-weight: 700;
   width: 100%;
   border-radius: 5px;
@@ -124,13 +118,15 @@ li a {
 .color-telegram:hover {
   color: #0000ff91;
 }
+.color-github:hover{
+  color: black;
+}
 
 .color-gmail:hover {
   color: #D7463A;
 }
 
 .btn-cv:hover {
-  //border: 1px transparent;
   text-decoration: none;
   color: #f3f3f3;
   background-color: #ffa500;
@@ -155,7 +151,6 @@ li a {
 
 a:hover {
   color: #ffa500;
-  //box-shadow: 0 0 8px;
 }
 
 /*section skill*/
@@ -210,7 +205,6 @@ a:hover {
 }
 
 .myBar {
-  //width: 20%;ё
   min-height: 10px;
   background-color: #ffa500;
   font: {
@@ -385,6 +379,7 @@ a:hover {
   .right {
     left: 0%;
   }
+
 }
 
 @media (max-width: 768px) {

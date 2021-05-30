@@ -13,30 +13,32 @@ const imagemin = require("gulp-imagemin");
 const clean = require("gulp-clean");
 const autoprefixer = require('gulp-autoprefixer');
 const concatCss = require('gulp-concat-css');
+const sass = require('gulp-sass');
+const concat = require('gulp-concat');
+
 
 //cssnano
 function css() {
     const source = './style/css.css';
     return src(source)
+        .pipe(autoprefixer({
+            cascade:false,
+        }))
         .pipe(cssnano())
         .pipe(dest('./build/css'))
         .pipe(browsersync.stream());
 }
-
-//autoprefixer
-// function ConcatCss() {
-//     const source = './style/**/*.css';
-//     return src(source)
-//         .pipe(autoprefixer({
-//             overrideBrowserslist: ['last 2 versions'],
-//             cascade: false
-//         }))
-//
-//         .pipe(concatCss('styles/bundle.css'))
-//         .pipe(dest('build'))
-// }
+//concat js
+function js() {
+    const source = './main.js';
+    return src(source)
+        .pipe(concat('all.js'))
+        .pipe(dest('./build/js'))
+        .pipe(browsersync.stream());
+}
 
 //imagemin
+
 function img() {
     const source = './img/*';
     return src(source)
@@ -60,7 +62,7 @@ function watchFiles() {
     watch('./style/*', css);
     watch('./*html', html);
     watch('./img/*', img);
-    // watch('./style/*.scss', ConcatCss);
+
 }
 
 function browS() {
@@ -73,4 +75,4 @@ function browS() {
 }
 
 exports.watch = parallel(watchFiles, browS);
-exports.default = series(clear, parallel(css, html, img));
+exports.default = series( parallel(css, html, img,js));
