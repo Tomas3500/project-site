@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
-
 * {
   font-family: "Raleway", sans-serif;
   font-size: 20px;
@@ -12,7 +11,6 @@ h3 {
 
 .container {
   max-width: 1200px;
-  //height: 100vh;
   background: #f3f3f3;
   margin-top: 30px;
   box-shadow: 0 0 8px;
@@ -49,40 +47,34 @@ h3 {
 }
 
 @media screen and (max-width: 768px) {
-  .block-right__info {
-    h1 {
-      font-size: 2rem;
-    }
-
-    h3 {
-      font-size: 1rem;
-    }
+  .block-right__info h1 {
+    font-size: 2rem;
+  }
+  .block-right__info h3 {
+    font-size: 1rem;
   }
 }
-
 @media screen and (max-width: 991.98px) {
   .container {
     margin-top: 0;
   }
 }
-
 @media screen and (max-width: 991.98px) {
   .my-progress-bar {
     font-size: 12px;
   }
 }
-
 @media (max-width: 767.98px) {
   .block-photo {
     display: block;
     max-width: 50%;
     margin: 10px auto;
   }
+
   .sticky-images {
     position: static;
   }
 }
-
 .btn-cv {
   font-weight: 700;
   width: 100%;
@@ -106,6 +98,7 @@ li a {
 .color-telegram:hover {
   color: #0000ff91;
 }
+
 .color-github:hover {
   color: black;
 }
@@ -124,16 +117,14 @@ li a {
 .my-progress-bar {
   margin-bottom: 10px;
   text-transform: uppercase;
-
-  p {
-    margin-bottom: 0;
-  }
-
-  span {
-    color: #ffa500;
-    margin-right: 5px;
-    display: inline-block;
-  }
+}
+.my-progress-bar p {
+  margin-bottom: 0;
+}
+.my-progress-bar span {
+  color: #ffa500;
+  margin-right: 5px;
+  display: inline-block;
 }
 
 a:hover {
@@ -189,26 +180,8 @@ a:hover {
 .myBar {
   min-height: 10px;
   background-color: #ffa500;
-  font: {
-    size: 10px;
-    weight: 700;
-  }
-}
-
-.javaScript {
-  // width: 47%;
-}
-
-.html {
-  // width: 50%;
-}
-
-.css {
-  // width: 55%;
-}
-
-.bootstrap {
-  // width: 45%;
+  font-size: 10px;
+  font-weight: 700;
 }
 
 .gulp {
@@ -330,6 +303,7 @@ a:hover {
   .timeline::after {
     left: 31px;
   }
+
   .right {
     left: 0;
   }
@@ -351,26 +325,24 @@ a:hover {
 
   /* Make sure all circles are at the same spot */
   .left::after,
-  .right::after {
+.right::after {
     left: 15px;
   }
-  cont-time
-    /* Make all right containers behave like the left ones */
-  .right {
+
+  cont-time .right {
     left: 0%;
   }
 }
-
 @media (max-width: 768px) {
   .content {
     padding: 10px 10px;
-
-    h2 {
-      font-size: 18px;
-    }
-
-    p {
-      font-size: 15px;
-    }
+  }
+  .content h2 {
+    font-size: 18px;
+  }
+  .content p {
+    font-size: 15px;
   }
 }
+
+/*# sourceMappingURL=css.css.map */

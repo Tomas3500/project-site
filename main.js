@@ -1,23 +1,34 @@
 let allDivBar = document.querySelectorAll('.myBar');
-let div_array = Array.prototype.slice.call(allDivBar);
 let outResult = document.querySelectorAll('.out');
-let dataParcent;
 let start = 0;
-let showProgressBars = setInterval(() => {
+
+function allResult(itembar) {
+
+    outResult.forEach(elem => {
+        itembar.style.width = start + '%';
+        elem.innerHTML = `${start}%`
 
 
-    if (start > 50) {
-        clearInterval(showProgressBars);
+    })
 
-    }
-    else {
-        div_array[1].style.width = start + '%';
-        outResult[1].innerHTML = `${start}% STUDY KNOW`
-    }
+}
 
-    start++;
+function getAtt() {
+    allDivBar.forEach(itembar => {
+        console.log(itembar.getAttribute('data-percent'))
+        let a = itembar.getAttribute('data-percent');
+        let showProgressBars = setInterval(() => {
+            if (start > 100) {
+                clearInterval(showProgressBars);
+            }
+            else {
 
-}, 10);
+                allResult(itembar)
+            }
+            start++
+        }, 100);
+    })
+}
 
 
 const year = new Date();
@@ -26,7 +37,7 @@ const contact = {
     age: myAge,
     city: "Kramatorsk",
     phone: 380999233489,
-    email: " smirnov9323@gmail.com",
+    email: "smirnov9323@gmail.com",
     photo: 'img/my-photo.jpg'
 };
 
@@ -40,4 +51,7 @@ function myContatnInfo() {
 
 }
 
+
+
+getAtt();
 myContatnInfo();
