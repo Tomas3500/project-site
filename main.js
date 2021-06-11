@@ -1,34 +1,44 @@
 let allDivBar = document.querySelectorAll('.myBar');
 let outResult = document.querySelectorAll('.out');
-let start = 0;
-
-function allResult(itembar) {
-
-    outResult.forEach(elem => {
-        itembar.style.width = start + '%';
-        elem.innerHTML = `${start}%`
-
-
-    })
-
-}
+let dataAttr;
+let out = []
+let res = [];
 
 function getAtt() {
-    allDivBar.forEach(itembar => {
-        console.log(itembar.getAttribute('data-percent'))
-        let a = itembar.getAttribute('data-percent');
-        let showProgressBars = setInterval(() => {
-            if (start > 100) {
-                clearInterval(showProgressBars);
-            }
-            else {
-
-                allResult(itembar)
-            }
-            start++
-        }, 100);
+    for (let i = 0; i < allDivBar.length; i++) {
+        dataAttr = allDivBar[i].dataset.percent
+        out.push(allDivBar[i].dataset.percent)
+    }
+    res = out.map(i => {
+        return +i
     })
+    return res
+
 }
+
+let timeInterval = setInterval(showProgresBar, 100)
+let start = 0;
+function showProgresBar() {
+    for (let i = 0; i < res.length; i++) {
+        if (start > res[i]) {
+            console.log(res[i])
+            clearInterval(timeInterval)
+
+        }
+        else {
+            start++
+            for (let i = 0; i < allDivBar.length; i++) {
+                allDivBar[i].style.width = start + '%'
+            }
+            // console.log(start)
+        }
+
+    }
+
+}
+getAtt()
+
+
 
 
 const year = new Date();
@@ -52,6 +62,7 @@ function myContatnInfo() {
 }
 
 
-
-getAtt();
+// progressBar()/
+// getAtt();
+showProgresBar()
 myContatnInfo();
