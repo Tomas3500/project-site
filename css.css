@@ -171,12 +171,6 @@ a:hover {
   top: 50%;
 }
 
-.myProgress {
-  width: 100%;
-  background-color: white;
-  border-radius: 3px;
-}
-
 .myBar {
   min-height: 10px;
   background-color: #ffa500;
@@ -184,27 +178,7 @@ a:hover {
   font-weight: 700;
 }
 
-.gulp {
-  width: 35%;
-}
-
 /* Section education*/
-.education {
-  padding-top: 25px;
-}
-
-.photoshop {
-  width: 43%;
-}
-
-.figma {
-  width: 35%;
-}
-
-.git {
-  width: 45%;
-}
-
 /* The actual timeline (the vertical ruler) */
 .timeline {
   position: relative;
