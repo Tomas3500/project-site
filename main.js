@@ -1,4 +1,5 @@
 let allDivBar = document.getElementsByClassName('myBar');
+let outResult = document.getElementsByClassName('out')
 
 function showProgresBar(time) {
     for (let i = 0; i < allDivBar.length; i++) {
@@ -11,13 +12,19 @@ function showProgresBar(time) {
             else {
                 width++
                 allDivBar[i].style.width = width + "%"
-                allDivBar[i].innerHTML = width
+
+                for (let i = 0; i < outResult.length; i++) {
+                    outResult[i].innerHTML = allDivBar[i].style.width
+                }
             }
 
         }, time)
+
+
     }
 
 }
+
 
 
 
@@ -40,5 +47,5 @@ function myContatnInfo() {
     document.querySelector('.my-photo').src = contact.photo;
 
 }
-showProgresBar(50);
+showProgresBar(35);
 myContatnInfo();
